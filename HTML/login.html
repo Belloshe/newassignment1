@@ -9,6 +9,7 @@
     <meta name="author" content="Bella">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styling/login.css">
+    <link rel="stylesheet" href="../styling/all.css">
     <link rel="shortcut icon" href="../images/milo-venus.png">
     <title>sign up!</title>
 
@@ -28,7 +29,7 @@
                         <a href="home.html">museum</a>
                     </li>
                     <li>
-                        <a href="login.html">contact</a>
+                        <a style="font-size: x-large;" href="login.html">contact </a>
                     </li>
                     <li>
                         <a href="index.html">Learn more</a>
@@ -39,19 +40,21 @@
         </header>
         <main class="page-main">
             <div>
-                <form>
+                <form action="mailto:someone@example.com" method="post" enctype="text/plain">
                     <ul class="flex-outer">
                         <li>
                             <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" placeholder="Enter your first name here">
+                            <input type="name" name="first-name" id="email" placeholder="Enter Email" required />
+
                         </li>
                         <li>
                             <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Enter your email here">
+                            <input type="email" name="email" id="email" placeholder="Enter Email" required />
                         </li>
                         <li>
                             <label for="message">Message</label>
-                            <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+                            <textarea rows="6" id="message" placeholder="Enter your message here" name="msg"
+                                required></textarea>
                         </li>
                         <li>
                         </li>
